@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="40dp"
+    android:gravity="center_vertical"
+    tools:context=".Activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_size"
+        android:padding="40dp"
+        android:layout_weight="0"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/btnConfig"
+        android:text="@string/text_view_config"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/round_corner"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/teal_200"
+        android:drawableStart="@drawable/baseline_settings_black_18dp"/>
+
+    <Button
+        android:id="@+id/btnDeviceElena"
+        android:text="@string/text_view_device_option_one"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/round_corner"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/teal_700"
+        android:drawableStart="@drawable/baseline_contactless_black_18dp"/>
+
+
+</LinearLayout>

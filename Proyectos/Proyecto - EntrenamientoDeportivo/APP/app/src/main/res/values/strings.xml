@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Sports</string>
+    <string name="text_view_config">MIS DISPOSITIVOS</string>
+    <string name="text_view_device_option_one">DISPOSITIVO ELENA</string>
+    <string name="device">Nombre Dispositivo</string>
+    <string name="search_device">BUSCAR</string>
+    <string name="insert_device">REGISTRAR</string>
+    <string name="ip_device">IP Actual Dispositivo</string>
+    <string name="reference_device">Referencia Dispositivo</string>
+    <string name="edit_device">MODIFICAR</string>
+    <string name="delete_device">ELIMINAR</string>
+    <string name="show_device">MOSTRAR DISPOSITIVOS</string>
+    <string name="enable_device">Habilitar Dispositivo</string>
+    <string name="device_info">INFORMACION DISPOSITIVO</string>
+    <string name="test_device">PROBAR</string>
+    <string name="function_one">Toggle Led</string>
+    <string name="function_two">Toggle Buzzer</string>
+    <string name="function_three">Toggle Double</string>
+    <string name="function_four">Touch</string>
+    <string name="led_blue">Blue</string>
+    <string name="led_green">Green</string>
+    <string name="led_red">Red</string>
+    <string name="submit">Submit Device</string>
+    <string name="proceso_pruebas">Proceso pruebas</string>
+    <string name="funciones">Funciones</string>
+    <string name="parametros">Parametros</string>
+    <string name="_30">30</string>
+    <string name="todo">TODO</string>
+    <string name="color_led">Color Led</string>
+    <string name="duraci_n">Duración</string>
+    <string name="velocidad">Velocidad</string>
+    <string name="_500">500</string>
+</resources>

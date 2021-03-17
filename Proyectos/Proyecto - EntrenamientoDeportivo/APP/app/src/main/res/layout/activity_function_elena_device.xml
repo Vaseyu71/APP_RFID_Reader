@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.FunctionElenaDevice"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/proceso_pruebas"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/funciones"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbFunctionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/function_one"
+                android:onClick="chooseFunction"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/baseline_highlight_black_18dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFunctionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/function_two"
+                android:onClick="chooseFunction"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/baseline_volume_up_black_18dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFunctionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/function_three"
+                android:onClick="chooseFunction"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/baseline_settings_input_component_black_18dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFunctionFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/function_four"
+                android:onClick="chooseFunction"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/baseline_touch_app_black_18dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color_led"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RadioButton
+                android:id="@+id/rbRed"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/led_red"
+                android:checked="true"
+                android:layout_weight="1"
+                android:onClick="chooseLed"/>
+
+            <RadioButton
+                android:id="@+id/rbGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/led_green"
+                android:layout_weight="1"
+                android:onClick="chooseLed"/>
+
+            <RadioButton
+                android:id="@+id/rbBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/led_blue"
+                android:layout_weight="1"
+                android:onClick="chooseLed"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/parametros"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@android:integer/config_mediumAnimTime"
+                android:text="@string/duraci_n"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:onClick="addTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sharp_arrow_drop_up_black_18dp"
+                android:backgroundTint="@color/teal_200"
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/_30"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:onClick="subTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sharp_arrow_drop_down_black_18dp"
+                android:backgroundTint="@color/teal_200"
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:contentDescription="@string/todo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/velocidad"
+                android:layout_weight="@android:integer/config_mediumAnimTime"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:onClick="addSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sharp_arrow_drop_up_black_18dp"
+                android:backgroundTint="@color/teal_200"
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:contentDescription="@string/todo"/>
+
+            <TextView
+                android:id="@+id/textViewSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:text="@string/_500"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:onClick="subSpeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sharp_arrow_drop_down_black_18dp"
+                android:backgroundTint="@color/teal_200"
+                android:background="@drawable/round_corner"
+                android:padding="10dp"
+                android:contentDescription="@string/todo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startFunction"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_play_arrow_black_18dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/teal_700"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/todo" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="stopFunction"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_stop_black_18dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/teal_700"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+
+</LinearLayout>
